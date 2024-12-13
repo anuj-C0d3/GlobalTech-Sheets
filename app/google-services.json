@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "613503799235",
+    "firebase_url": "https://digital-sheet-default-rtdb.firebaseio.com",
+    "project_id": "digital-sheet",
+    "storage_bucket": "digital-sheet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613503799235:android:008ac7f5f7eec282c03776",
+        "android_client_info": {
+          "package_name": "com.example.digitalsheet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCstCH7RCssLU-NxjiUPkmkpLDj_Z1nhDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613503799235:android:da9a5cb4642f957dc03776",
+        "android_client_info": {
+          "package_name": "com.example.globaltechsheets"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCstCH7RCssLU-NxjiUPkmkpLDj_Z1nhDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

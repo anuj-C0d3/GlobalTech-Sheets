@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="horizontal|vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+
+                    android:id="@+id/jobsheet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="@color/white"
+                    tools:context=".OzoneJobsheet">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/myjobsheetlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:context=".OzoneJobsheet">
+
+                        <EditText
+                            android:id="@+id/nameConsent"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:ems="10"
+                            android:gravity="bottom"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="7dp"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView11"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/textView11"
+                            app:layout_constraintTop_toBottomOf="@+id/radioGroup3"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <EditText
+                            android:id="@+id/nameConsent2"
+                            android:layout_width="90dp"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="7dp"
+                            android:ems="10"
+                            android:gravity="bottom"
+                            android:inputType="number"
+                            android:paddingLeft="7dp"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                            app:layout_constraintStart_toEndOf="@+id/textView12"
+                            app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="120dp"
+                            android:layout_height="70dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ozonlogo" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SERVICE JOB SHEET"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold|italic"
+                            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+                            app:layout_constraintStart_toStartOf="@+id/imageView5"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="102dp"
+                            android:text="Service Request No."
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/requestno"
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView2"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <EditText
+                            android:id="@+id/editTextDate"
+                            android:layout_width="120dp"
+                            android:layout_height="27dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="@+id/textView3"
+                            app:layout_constraintStart_toStartOf="@+id/textView3"
+                            app:layout_constraintTop_toBottomOf="@+id/textView3"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="90dp"
+                            android:text="Date"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/textView2"
+                            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="54dp"
+                            android:text="Product Status"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/textView3"
+                            app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+
+                            app:layout_constraintStart_toStartOf="@+id/textView4"
+                            app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                            <CheckBox
+                                android:id="@+id/inwarrenty"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:text="In Warranty-DOP"
+                                android:textColor="@color/black"
+                                android:textColorLink="#838383"
+                                android:textSize="11sp" />
+
+                            <CheckBox
+                                android:id="@+id/outwarranty"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:text="Out of Warranty"
+                                android:textColor="@color/black"
+                                android:textColorLink="#838383"
+                                android:textSize="11sp" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Request Type"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/radioGroup"
+                            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            app:layout_constraintStart_toStartOf="@+id/textView5"
+                            app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+                            <CheckBox
+                                android:id="@+id/repair"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:text="Repair"
+                                android:textColor="@color/black"
+                                android:textColorLink="#838383"
+                                android:textSize="11sp" />
+
+                            <CheckBox
+                                android:id="@+id/sheetservice"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:text="Service"
+                                android:textColor="@color/black"
+                                android:textColorLink="#838383"
+                                android:textSize="11sp" />
+
+                            <CheckBox
+                                android:id="@+id/sheetinstall"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:text="Installation"
+                                android:textColor="@color/black"
+                                android:textColorLink="#838383"
+                                android:textSize="11sp" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Customer Details"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/requestno"
+                            app:layout_constraintTop_toBottomOf="@+id/requestno" />
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:text="Name: "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView6"
+                            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Mobile: "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView7"
+                            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Address: "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView8"
+                            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                        <EditText
+                            android:id="@+id/sheetCusName"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="5dp"
+                            android:backgroundTint="@color/black"
+                            android:ems="10"
+                            android:gravity="center_vertical"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="7dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView7"
+                            app:layout_constraintEnd_toEndOf="@+id/editTextDate"
+                            app:layout_constraintStart_toEndOf="@+id/textView7"
+                            app:layout_constraintTop_toTopOf="@+id/textView7"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <EditText
+                            android:id="@+id/sheetmobile"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="5dp"
+                            android:backgroundTint="@color/black"
+                            android:ems="10"
+                            android:gravity="center_vertical"
+                            android:inputType="text|textAutoComplete|textAutoCorrect"
+                            android:paddingLeft="7dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+                            app:layout_constraintEnd_toEndOf="@+id/sheetCusName"
+                            app:layout_constraintStart_toEndOf="@+id/textView8"
+                            app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+                        <EditText
+                            android:id="@+id/sheetAddr1"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="5dp"
+                            android:backgroundTint="@color/black"
+                            android:ems="10"
+                            android:gravity="center_vertical"
+                            android:inputType="textPostalAddress"
+                            android:paddingLeft="7dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                            app:layout_constraintEnd_toEndOf="@+id/sheetmobile"
+                            app:layout_constraintStart_toEndOf="@+id/textView9"
+                            app:layout_constraintTop_toTopOf="@+id/textView9"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <EditText
+                            android:id="@+id/sheetAddr2"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:backgroundTint="@color/black"
+                            android:ems="10"
+                            android:gravity="bottom"
+                            android:hint="City and Pincode"
+                            android:inputType="text"
+                            android:paddingLeft="7dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="@+id/sheetAddr1"
+                            app:layout_constraintStart_toStartOf="@+id/textView9"
+                            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                        <EditText
+                            android:id="@+id/pnameCode"
+                            android:layout_width="120dp"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="5dp"
+                            android:backgroundTint="@color/black"
+                            android:ems="10"
+                            android:gravity="center_vertical"
+                            android:inputType="text"
+                            android:paddingLeft="7dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView15"
+                            app:layout_constraintStart_toEndOf="@+id/textView15"
+                            app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+                        <EditText
+                            android:id="@+id/servicecharge"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="5dp"
+                            android:backgroundTint="@color/black"
+                            android:ems="10"
+                            android:gravity="center_vertical"
+                            android:inputType="text"
+                            android:paddingLeft="7dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView19"
+                            app:layout_constraintEnd_toEndOf="@+id/nameConsent2"
+                            app:layout_constraintStart_toEndOf="@+id/textView19"
+                            app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+                        <EditText
+                            android:id="@+id/signature"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="5dp"
+                            android:backgroundTint="@color/black"
+                            android:ems="10"
+                            android:gravity="bottom"
+                            android:inputType="text"
+                            android:paddingLeft="7dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView24"
+                            app:layout_constraintEnd_toEndOf="@+id/nameExpert"
+                            app:layout_constraintStart_toEndOf="@+id/textView24"
+                            app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/sigcus"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:background="@color/white"
+                            app:layout_constraintBottom_toTopOf="@+id/radioGroup3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/imageView5">
+
+                            <com.github.gcacace.signaturepad.views.SignaturePad
+                                android:id="@+id/signature_pad"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:backgroundTint="@android:color/transparent"
+
+                                android:defaultFocusHighlightEnabled="true"
+                                android:maxWidth="1dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:penColor="@android:color/black"
+                                app:penMaxWidth="1dp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        <EditText
+                            android:id="@+id/nameExpert"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="5dp"
+                            android:backgroundTint="@color/black"
+                            android:ems="10"
+                            android:gravity="center_vertical"
+                            android:inputType="text"
+                            android:paddingLeft="7dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView23"
+                            app:layout_constraintEnd_toEndOf="@+id/SparePartscharge"
+                            app:layout_constraintStart_toEndOf="@+id/textView23"
+                            app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+                        <EditText
+                            android:id="@+id/cname"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="5dp"
+                            android:backgroundTint="@color/black"
+                            android:ems="10"
+                            android:gravity="center_vertical"
+                            android:inputType="text"
+                            android:paddingLeft="7dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView27"
+                            app:layout_constraintEnd_toEndOf="@+id/faultDescrib2"
+                            app:layout_constraintStart_toEndOf="@+id/textView27"
+                            app:layout_constraintTop_toTopOf="@+id/textView27"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <EditText
+                            android:id="@+id/remark1"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:backgroundTint="@color/black"
+                            android:ems="10"
+                            android:gravity="bottom"
+                            android:inputType="text"
+                            android:paddingLeft="7dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="@+id/cname"
+                            app:layout_constraintStart_toEndOf="@+id/textView28"
+                            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+                        <EditText
+                            android:id="@+id/SparePartscharge"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="5dp"
+                            android:backgroundTint="@color/black"
+                            android:ems="10"
+                            android:gravity="center_vertical"
+                            android:inputType="text"
+                            android:paddingLeft="7dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView20"
+                            app:layout_constraintEnd_toEndOf="@+id/servicecharge"
+                            app:layout_constraintStart_toEndOf="@+id/textView20"
+                            app:layout_constraintTop_toTopOf="@+id/textView20"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <EditText
+                            android:id="@+id/faultDescrib"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:backgroundTint="@color/black"
+                            android:ems="10"
+                            android:gravity="center_vertical"
+                            android:inputType="text"
+                            android:paddingLeft="7dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView17"
+                            app:layout_constraintEnd_toEndOf="@+id/spareRequest"
+                            app:layout_constraintStart_toEndOf="@+id/textView17"
+                            app:layout_constraintTop_toTopOf="@+id/textView17"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <EditText
+                            android:id="@+id/faultDescrib2"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/black"
+                            android:ems="10"
+                            android:gravity="center_vertical"
+                            android:inputType="text"
+                            android:paddingLeft="7dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="@+id/faultDescrib"
+                            app:layout_constraintStart_toStartOf="@+id/textView17"
+                            app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+                        <EditText
+                            android:id="@+id/spareRequest"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:backgroundTint="@color/black"
+                            android:ems="10"
+                            android:gravity="center_vertical"
+                            android:inputType="text"
+                            android:paddingLeft="7dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView16"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/textView16"
+                            app:layout_constraintTop_toTopOf="@+id/textView16"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Pre-Installation Check: "
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/sheetAddr2"
+                            app:layout_constraintTop_toBottomOf="@+id/sheetAddr2" />
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                            app:layout_constraintStart_toEndOf="@+id/textView10"
+                            app:layout_constraintTop_toTopOf="@+id/textView10">
+
+                            <CheckBox
+                                android:id="@+id/keypad"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:foregroundTint="@color/black"
+                                android:padding="0dp"
+                                android:text="Keypad"
+                                android:textColor="@color/black"
+                                android:textColorLink="#838383"
+                                android:textSize="10sp"
+                                app:useMaterialThemeColors="false" />
+
+                            <CheckBox
+                                android:id="@+id/fingerprint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:padding="0dp"
+                                android:text="Fingerprint"
+                                android:textColor="@color/black"
+                                android:textColorLink="#838383"
+                                android:textSize="10sp" />
+
+                            <CheckBox
+                                android:id="@+id/completeasesor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:padding="0dp"
+                                android:text="Complete Accessories"
+                                android:textColor="@color/black"
+                                android:textColorLink="#838383"
+                                android:textSize="10sp" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Consent: This is consent from custormer Name: "
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView10"
+                            app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Vide Complaint Number:- "
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView11"
+                            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="customer allows the work to proceed after"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/nameConsent2"
+                            app:layout_constraintEnd_toEndOf="@+id/nameConsent"
+                            app:layout_constraintStart_toEndOf="@+id/nameConsent2"
+                            app:layout_constraintTop_toTopOf="@+id/nameConsent2" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:background="#0007E727"
+                            android:backgroundTint="@color/black"
+                            android:layerType="none"
+                            android:paddingRight="4dp"
+                            android:text="knowing that the thickness of a door or the designer door does not meet those requirements which company has spcified and if the door does not perform as expected or damaged while performing the work, the Ozone Company will not be leable to pay any kind of compensation of damages."
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:typeface="normal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/textView12"
+                            app:layout_constraintTop_toBottomOf="@+id/textView12"
+                            app:layout_wrapBehaviorInParent="horizontal_only" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="@string/product_name_code"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView14"
+                            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:text="Spare part Request"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/pnameCode"
+                            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="fault Description: "
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView15"
+                            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Charges Collected"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/faultDescrib2"
+                            app:layout_constraintTop_toBottomOf="@+id/faultDescrib2" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:text="Service: "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView18"
+                            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="Spare Part: "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView19"
+                            app:layout_constraintTop_toBottomOf="@+id/servicecharge" />
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:text="Ozone Service Expert"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView20"
+                            app:layout_constraintTop_toBottomOf="@+id/SparePartscharge" />
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="#00FFFFFF"
+                            android:text="Name: "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView22"
+                            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                        <TextView
+                            android:id="@+id/textView24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:background="#00FFFFFF"
+                            android:text="Signature: "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView23"
+                            app:layout_constraintTop_toBottomOf="@+id/nameExpert" />
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="135dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Payment Mode"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/textView18"
+                            app:layout_constraintTop_toBottomOf="@+id/faultDescrib2" />
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            app:layout_constraintStart_toEndOf="@+id/servicecharge"
+                            app:layout_constraintTop_toBottomOf="@+id/textView25">
+
+                            <CheckBox
+                                android:id="@+id/paymentcashchek"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:text="Cash"
+                                android:textColor="@color/black"
+                                android:textColorLink="#838383"
+                                android:textSize="12sp" />
+
+                            <CheckBox
+                                android:id="@+id/paymentchek"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:text="Online (Paytm, GPay\nPhonepe,Other.)"
+                                android:textColor="@color/black"
+                                android:textColorLink="#838383"
+                                android:textSize="11sp" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Customer Details"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/radioGroup2"
+                            app:layout_constraintTop_toBottomOf="@+id/SparePartscharge" />
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Name: "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView26"
+                            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+                        <TextView
+                            android:id="@+id/textView28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="Remark: "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView27"
+                            app:layout_constraintTop_toBottomOf="@+id/cname" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="58dp"
+                            android:layout_height="61dp"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="32dp"
+                            app:layout_constraintBottom_toTopOf="@+id/cname"
+                            app:layout_constraintEnd_toEndOf="@+id/faultDescrib2"
+                            app:layout_constraintStart_toEndOf="@+id/radioGroup2"
+                            app:layout_constraintTop_toBottomOf="@+id/faultDescrib2"
+                            app:srcCompat="@drawable/qr" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="100dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="50dp"
+                            android:background="#00FFFFFF"
+                            app:layout_constraintStart_toStartOf="@+id/textView28"
+                            app:layout_constraintTop_toBottomOf="@+id/remark1"
+                            app:srcCompat="@drawable/rting" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="0dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/black"
+                            android:gravity="center"
+                            android:text="@string/footer"
+                            android:textColor="@color/white"
+                            android:textSize="9.7sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                        <ImageView
+                            android:id="@+id/exsignimg"
+                            android:layout_width="200dp"
+                            android:layout_height="140dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+
+                            android:background="@android:color/transparent"
+                            android:backgroundTint="@android:color/transparent"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintBottom_toTopOf="@+id/textView21"
+                            app:layout_constraintEnd_toStartOf="@+id/textView28"
+                            app:layout_constraintStart_toStartOf="@+id/textView23"
+                            app:layout_constraintTop_toBottomOf="@+id/SparePartscharge"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                        <ImageView
+                            android:id="@+id/cussignimg"
+                            android:layout_width="200dp"
+                            android:layout_height="140dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@android:color/transparent"
+                            android:backgroundTint="@android:color/transparent"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                            app:layout_constraintEnd_toEndOf="@+id/remark1"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toEndOf="@+id/signature"
+                            app:layout_constraintTop_toTopOf="@+id/exsignimg"
+                            app:layout_constraintVertical_bias="0.0"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <Button
+                        android:id="@+id/savebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="#527CB4"
+                        android:text="Save"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/myjobsheetlayout" />
+
+                    <Button
+                        android:id="@+id/expertSignature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#98CEFB"
+                        android:text="Expert Signature"
+                        android:textColor="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/myjobsheetlayout" />
+
+                    <Button
+                        android:id="@+id/cussignature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:backgroundTint="#7DC9ED"
+                        android:text="Customer Signature"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toStartOf="@+id/savebtn"
+                        app:layout_constraintTop_toBottomOf="@+id/myjobsheetlayout" />
+
+                    <Button
+                        android:id="@+id/exppad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:backgroundTint="#44A4FB"
+                        android:text="Expert Pad "
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/myjobsheetlayout" />
+
+                    <Button
+                        android:id="@+id/custompad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="30dp"
+                        android:backgroundTint="#4CAEFB"
+                        android:text="Customer pad"
+                        app:layout_constraintEnd_toStartOf="@+id/savebtn"
+                        app:layout_constraintTop_toBottomOf="@+id/myjobsheetlayout" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>
+

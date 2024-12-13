@@ -1,0 +1,1357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/d"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/main"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        tools:context=".DorsetJobsheet">
+
+
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="419dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@color/black"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="1dp"
+                            android:paddingBottom="3dp"
+                            android:text="Technician Job sheet/Warranty Card"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView32"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Customer Personal Details"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/textView29"
+                            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+                        <TextView
+                            android:id="@+id/textView33"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:padding="3dp"
+                            android:text="Name"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView32"
+                            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+                        <TextView
+                            android:id="@+id/textView34"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:padding="3dp"
+                            android:text="Mobile No"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView33"
+                            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+                        <TextView
+                            android:id="@+id/textView35"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:padding="3dp"
+                            android:text="Email ID"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView34"
+                            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:padding="3dp"
+                            android:text="City"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView35"
+                            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+                        <TextView
+                            android:id="@+id/textView37"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:padding="3dp"
+                            android:text="Indian State"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView36"
+                            app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+                        <EditText
+                            android:id="@+id/dorsetCustomerName"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:padding="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView34"
+                            app:layout_constraintEnd_toEndOf="@+id/technicianId"
+                            app:layout_constraintStart_toEndOf="@+id/textView33"
+                            app:layout_constraintTop_toTopOf="@+id/textView33" />
+
+                        <EditText
+                            android:id="@+id/dorsetMobleNo"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:padding="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView35"
+                            app:layout_constraintEnd_toEndOf="@+id/dorsetCustomerName"
+                            app:layout_constraintStart_toEndOf="@+id/textView34"
+                            app:layout_constraintTop_toBottomOf="@+id/dorsetCustomerName" />
+
+                        <EditText
+                            android:id="@+id/dorsetEmailId"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:padding="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView35"
+                            app:layout_constraintEnd_toEndOf="@+id/dorsetMobleNo"
+                            app:layout_constraintStart_toEndOf="@+id/textView35"
+                            app:layout_constraintTop_toBottomOf="@+id/dorsetMobleNo" />
+
+                        <EditText
+                            android:id="@+id/dorsetCity"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:padding="2dp"
+                            android:text="Bhopal"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView36"
+                            app:layout_constraintEnd_toEndOf="@+id/dorsetEmailId"
+                            app:layout_constraintStart_toEndOf="@+id/textView36"
+                            app:layout_constraintTop_toBottomOf="@+id/dorsetEmailId" />
+
+                        <EditText
+                            android:id="@+id/dorsetState"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:padding="2dp"
+                            android:text="M.P."
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView37"
+                            app:layout_constraintEnd_toEndOf="@+id/dorsetCity"
+                            app:layout_constraintStart_toEndOf="@+id/textView37"
+                            app:layout_constraintTop_toBottomOf="@+id/dorsetCity" />
+
+                        <TextView
+                            android:id="@+id/textView39"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:padding="2dp"
+                            android:text="Address"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/dorsetEmailId"
+                            app:layout_constraintEnd_toEndOf="@+id/textView31"
+                            app:layout_constraintStart_toEndOf="@+id/dorsetCustomerName"
+                            app:layout_constraintTop_toTopOf="@+id/dorsetCustomerName" />
+
+                        <EditText
+                            android:id="@+id/dorsetAddress"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:inputType="text|textPostalAddress|textImeMultiLine|textMultiLine"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView39"
+                            app:layout_constraintEnd_toEndOf="@+id/textView32"
+                            app:layout_constraintStart_toEndOf="@+id/textView39"
+                            app:layout_constraintTop_toTopOf="@+id/textView39" />
+
+                        <TextView
+                            android:id="@+id/textView40"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:padding="2dp"
+                            android:text="Land Mark (if any)"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            app:layout_constraintBottom_toTopOf="@+id/dorsetState"
+                            app:layout_constraintEnd_toEndOf="@+id/textView39"
+                            app:layout_constraintStart_toEndOf="@+id/dorsetCity"
+                            app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+                        <TextView
+                            android:id="@+id/textView41"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:padding="2dp"
+                            android:text="Pin Code"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/dorsetState"
+                            app:layout_constraintEnd_toEndOf="@+id/textView40"
+                            app:layout_constraintStart_toEndOf="@+id/dorsetState"
+                            app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+                        <EditText
+                            android:id="@+id/editTextText9"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:padding="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView41"
+                            app:layout_constraintEnd_toEndOf="@+id/dorsetAddress"
+                            app:layout_constraintStart_toEndOf="@+id/textView40"
+                            app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+                        <EditText
+                            android:id="@+id/dorsetPincode"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:padding="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView41"
+                            app:layout_constraintEnd_toEndOf="@+id/editTextText9"
+                            app:layout_constraintStart_toStartOf="@+id/editTextText9"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextText9" />
+
+                        <TextView
+                            android:id="@+id/textView38"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Product and Purchase Details"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/dorsetPincode"
+                            app:layout_constraintStart_toStartOf="@+id/textView37"
+                            app:layout_constraintTop_toBottomOf="@+id/dorsetState" />
+
+                        <TextView
+                            android:id="@+id/textView42"
+                            android:layout_width="200dp"
+                            android:layout_height="21dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:padding="3dp"
+                            android:text="Select any of the product from below list"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:textStyle="bold|italic"
+                            app:layout_constraintStart_toStartOf="@+id/textView38"
+                            app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+                        <TextView
+                            android:id="@+id/textView43"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="DG 501"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView42"
+                            app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+                        <TextView
+                            android:id="@+id/textView44"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="DG 504"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView43"
+                            app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+                        <TextView
+                            android:id="@+id/textView45"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="DG 606"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView44"
+                            app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+                        <TextView
+                            android:id="@+id/textView46"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="DG 801"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="@+id/textView45"
+                            app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+                        <EditText
+                            android:id="@+id/Dg3"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:padding="4dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="@+id/textView46"
+                            app:layout_constraintStart_toStartOf="@+id/textView46"
+                            app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+                        <TextView
+                            android:id="@+id/textView48"
+                            android:layout_width="60dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:gravity="center"
+                            android:text="DG 502"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView43"
+                            app:layout_constraintStart_toEndOf="@+id/textView43"
+                            app:layout_constraintTop_toTopOf="@+id/textView43" />
+
+                        <TextView
+                            android:id="@+id/textView49"
+                            android:layout_width="60dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:gravity="center"
+                            android:text="DG 601"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView44"
+                            app:layout_constraintStart_toEndOf="@+id/textView44"
+                            app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+                        <TextView
+                            android:id="@+id/textView50"
+                            android:layout_width="60dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:gravity="center"
+                            android:text="DG 607"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView45"
+                            app:layout_constraintStart_toEndOf="@+id/textView45"
+                            app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+                        <TextView
+                            android:id="@+id/textView51"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:gravity="center"
+                            android:text="DG 503"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView48"
+                            app:layout_constraintEnd_toEndOf="@+id/textView42"
+                            app:layout_constraintStart_toEndOf="@+id/textView48"
+                            app:layout_constraintTop_toTopOf="@+id/textView48" />
+
+                        <TextView
+                            android:id="@+id/textView52"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:gravity="center"
+                            android:text="DG 603"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView49"
+                            app:layout_constraintEnd_toEndOf="@+id/textView51"
+                            app:layout_constraintStart_toEndOf="@+id/textView49"
+                            app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+                        <TextView
+                            android:id="@+id/textView53"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:gravity="center"
+                            android:text="DG 705"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView50"
+                            app:layout_constraintEnd_toEndOf="@+id/textView52"
+                            app:layout_constraintStart_toEndOf="@+id/textView50"
+                            app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+                        <EditText
+                            android:id="@+id/Dg2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:padding="4dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="@+id/textView53"
+                            app:layout_constraintStart_toEndOf="@+id/textView50"
+                            app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+                        <EditText
+                            android:id="@+id/Dg5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:padding="4dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="@+id/Dg2"
+                            app:layout_constraintStart_toStartOf="@+id/Dg2"
+                            app:layout_constraintTop_toBottomOf="@+id/Dg2" />
+
+                        <EditText
+                            android:id="@+id/Dg4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:padding="4dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="@+id/DG1"
+                            app:layout_constraintStart_toEndOf="@+id/textView46"
+                            app:layout_constraintTop_toBottomOf="@+id/DG1" />
+
+                        <EditText
+                            android:id="@+id/DG1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="text"
+                            android:padding="4dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="@+id/textView50"
+                            app:layout_constraintStart_toEndOf="@+id/textView46"
+                            app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+                        <TextView
+                            android:id="@+id/textView54"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="3dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Dealers Name and Address"
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView52"
+                            app:layout_constraintEnd_toEndOf="@+id/textView41"
+                            app:layout_constraintStart_toEndOf="@+id/textView42"
+                            app:layout_constraintTop_toBottomOf="@+id/textView38"
+                            app:layout_wrapBehaviorInParent="included" />
+
+                        <TextView
+                            android:id="@+id/textView55"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Installation Address"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toTopOf="@+id/Dg2"
+                            app:layout_constraintEnd_toEndOf="@+id/textView54"
+                            app:layout_constraintStart_toEndOf="@+id/textView52"
+                            app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+                        <TextView
+                            android:id="@+id/textView56"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Invoice No"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/Dg2"
+                            app:layout_constraintEnd_toEndOf="@+id/textView55"
+                            app:layout_constraintStart_toEndOf="@+id/Dg2"
+                            app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+                        <TextView
+                            android:id="@+id/textView57"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Total Quantity"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/Dg5"
+                            app:layout_constraintEnd_toEndOf="@+id/textView56"
+                            app:layout_constraintStart_toEndOf="@+id/Dg5"
+                            app:layout_constraintTop_toBottomOf="@+id/textView56"
+                            app:layout_constraintVertical_bias="0.666" />
+
+                        <EditText
+                            android:id="@+id/dorsetDealerName"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:inputType="text|textImeMultiLine|textMultiLine"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView54"
+                            app:layout_constraintEnd_toEndOf="@+id/textView38"
+                            app:layout_constraintStart_toEndOf="@+id/textView54"
+                            app:layout_constraintTop_toTopOf="@+id/textView54" />
+
+                        <EditText
+                            android:id="@+id/installationAddress"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:inputType="text|textImeMultiLine|textMultiLine"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView55"
+                            app:layout_constraintEnd_toEndOf="@+id/dorsetDealerName"
+                            app:layout_constraintStart_toEndOf="@+id/textView55"
+                            app:layout_constraintTop_toBottomOf="@+id/dorsetDealerName" />
+
+                        <EditText
+                            android:id="@+id/dorsetInvoiceNo"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView56"
+                            app:layout_constraintEnd_toEndOf="@+id/installationAddress"
+                            app:layout_constraintStart_toEndOf="@+id/textView56"
+                            app:layout_constraintTop_toBottomOf="@+id/installationAddress" />
+
+                        <EditText
+                            android:id="@+id/dorsetQuantity"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView57"
+                            app:layout_constraintEnd_toEndOf="@+id/dorsetInvoiceNo"
+                            app:layout_constraintStart_toEndOf="@+id/textView57"
+                            app:layout_constraintTop_toBottomOf="@+id/dorsetInvoiceNo" />
+
+                        <TextView
+                            android:id="@+id/textView30"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Technician ID "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="@+id/textView33"
+                            app:layout_constraintStart_toStartOf="@+id/textView29"
+                            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+                        <EditText
+                            android:id="@+id/technicianId"
+                            android:layout_width="90dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColorHighlight="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView30"
+                            app:layout_constraintStart_toEndOf="@+id/textView30"
+                            app:layout_constraintTop_toTopOf="@+id/textView30" />
+
+                        <TextView
+                            android:id="@+id/textView31"
+                            android:layout_width="110dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Installation Date"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/technicianId"
+                            app:layout_constraintStart_toEndOf="@+id/technicianId"
+                            app:layout_constraintTop_toTopOf="@+id/technicianId" />
+
+                        <EditText
+                            android:id="@+id/installationDate"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView31"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/textView31"
+                            app:layout_constraintTop_toTopOf="@+id/textView31" />
+
+                        <TextView
+                            android:id="@+id/textView47"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:text="Serial No"
+                            android:textColor="@color/black"
+                            android:textSize="9sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toStartOf="@+id/Dg5"
+                            app:layout_constraintStart_toStartOf="@+id/Dg3"
+                            app:layout_constraintTop_toBottomOf="@+id/Dg3" />
+
+                        <EditText
+                            android:id="@+id/serial1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="@+id/textView47"
+                            app:layout_constraintStart_toStartOf="@+id/textView47"
+                            app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+                        <EditText
+                            android:id="@+id/serial2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="@+id/serial1"
+                            app:layout_constraintStart_toStartOf="@+id/serial1"
+                            app:layout_constraintTop_toBottomOf="@+id/serial1" />
+
+                        <EditText
+                            android:id="@+id/serial3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="@+id/serial2"
+                            app:layout_constraintStart_toStartOf="@+id/serial2"
+                            app:layout_constraintTop_toBottomOf="@+id/serial2" />
+
+                        <EditText
+                            android:id="@+id/serial4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="@+id/serial3"
+                            app:layout_constraintStart_toStartOf="@+id/serial3"
+                            app:layout_constraintTop_toBottomOf="@+id/serial3" />
+
+                        <EditText
+                            android:id="@+id/serial5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="3dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="@+id/serial4"
+                            app:layout_constraintStart_toStartOf="@+id/serial4"
+                            app:layout_constraintTop_toBottomOf="@+id/serial4" />
+
+                        <TextView
+                            android:id="@+id/textView58"
+                            android:layout_width="50dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Floor No"
+                            android:textColor="@color/black"
+                            android:textSize="9sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView47"
+                            app:layout_constraintStart_toEndOf="@+id/textView47"
+                            app:layout_constraintTop_toTopOf="@+id/textView47" />
+
+                        <TextView
+                            android:id="@+id/textView59"
+                            android:layout_width="50dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Room No"
+                            android:textColor="@color/black"
+                            android:textSize="9sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView58"
+                            app:layout_constraintStart_toEndOf="@+id/textView58"
+                            app:layout_constraintTop_toTopOf="@+id/textView58" />
+
+                        <TextView
+                            android:id="@+id/textView60"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Warreanty No."
+                            android:textColor="@color/black"
+                            android:textSize="9sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView59"
+                            app:layout_constraintEnd_toEndOf="@+id/textView57"
+                            app:layout_constraintStart_toEndOf="@+id/textView59"
+                            app:layout_constraintTop_toTopOf="@+id/textView59" />
+
+                        <TextView
+                            android:id="@+id/textView61"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:text="Remarks"
+                            android:textColor="@color/black"
+                            android:textSize="9sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView60"
+                            app:layout_constraintEnd_toEndOf="@+id/dorsetQuantity"
+                            app:layout_constraintStart_toEndOf="@+id/textView60"
+                            app:layout_constraintTop_toTopOf="@+id/textView60" />
+
+                        <EditText
+                            android:id="@+id/floor1"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/serial1"
+                            app:layout_constraintEnd_toEndOf="@+id/textView58"
+                            app:layout_constraintStart_toEndOf="@+id/textView47"
+                            app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+                        <EditText
+                            android:id="@+id/floor2"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toTopOf="@+id/serial3"
+                            app:layout_constraintEnd_toEndOf="@+id/floor1"
+                            app:layout_constraintStart_toEndOf="@+id/serial1"
+                            app:layout_constraintTop_toBottomOf="@+id/floor1" />
+
+                        <EditText
+                            android:id="@+id/floor3"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toTopOf="@+id/serial4"
+                            app:layout_constraintEnd_toEndOf="@+id/floor2"
+                            app:layout_constraintStart_toStartOf="@+id/floor2"
+                            app:layout_constraintTop_toBottomOf="@+id/floor2" />
+
+                        <EditText
+                            android:id="@+id/floor4"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/serial4"
+                            app:layout_constraintEnd_toEndOf="@+id/floor3"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="@+id/floor3"
+                            app:layout_constraintTop_toBottomOf="@+id/floor3" />
+
+                        <EditText
+                            android:id="@+id/floor5"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/serial5"
+                            app:layout_constraintEnd_toEndOf="@+id/floor4"
+                            app:layout_constraintStart_toStartOf="@+id/floor4"
+                            app:layout_constraintTop_toBottomOf="@+id/floor4" />
+
+                        <EditText
+                            android:id="@+id/room1"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/floor1"
+                            app:layout_constraintEnd_toEndOf="@+id/textView59"
+                            app:layout_constraintStart_toEndOf="@+id/floor1"
+                            app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+                        <EditText
+                            android:id="@+id/room2"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/floor2"
+                            app:layout_constraintEnd_toEndOf="@+id/room1"
+                            app:layout_constraintStart_toEndOf="@+id/floor2"
+                            app:layout_constraintTop_toBottomOf="@+id/room1" />
+
+                        <EditText
+                            android:id="@+id/room3"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/floor3"
+                            app:layout_constraintEnd_toEndOf="@+id/room2"
+                            app:layout_constraintStart_toEndOf="@+id/floor2"
+                            app:layout_constraintTop_toBottomOf="@+id/room2" />
+
+                        <EditText
+                            android:id="@+id/room4"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/floor4"
+                            app:layout_constraintEnd_toEndOf="@+id/room3"
+                            app:layout_constraintStart_toEndOf="@+id/floor3"
+                            app:layout_constraintTop_toBottomOf="@+id/room3" />
+
+                        <EditText
+                            android:id="@+id/room5"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/floor5"
+                            app:layout_constraintEnd_toEndOf="@+id/room4"
+                            app:layout_constraintStart_toEndOf="@+id/floor5"
+                            app:layout_constraintTop_toBottomOf="@+id/room4" />
+
+                        <EditText
+                            android:id="@+id/war1"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/room1"
+                            app:layout_constraintEnd_toEndOf="@+id/textView60"
+                            app:layout_constraintStart_toEndOf="@+id/room1"
+                            app:layout_constraintTop_toBottomOf="@+id/textView60" />
+
+                        <EditText
+                            android:id="@+id/war2"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/room2"
+                            app:layout_constraintEnd_toEndOf="@+id/war1"
+                            app:layout_constraintStart_toStartOf="@+id/war1"
+                            app:layout_constraintTop_toBottomOf="@+id/war1" />
+
+                        <EditText
+                            android:id="@+id/war3"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/room3"
+                            app:layout_constraintEnd_toEndOf="@+id/war2"
+                            app:layout_constraintStart_toEndOf="@+id/room3"
+                            app:layout_constraintTop_toBottomOf="@+id/war2" />
+
+                        <EditText
+                            android:id="@+id/war4"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/room4"
+                            app:layout_constraintEnd_toEndOf="@+id/war3"
+                            app:layout_constraintStart_toEndOf="@+id/room4"
+                            app:layout_constraintTop_toBottomOf="@+id/war3" />
+
+                        <EditText
+                            android:id="@+id/war5"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/room5"
+                            app:layout_constraintEnd_toEndOf="@+id/war4"
+                            app:layout_constraintStart_toEndOf="@+id/room5"
+                            app:layout_constraintTop_toBottomOf="@+id/war4" />
+
+                        <EditText
+                            android:id="@+id/remark1"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/war1"
+                            app:layout_constraintEnd_toEndOf="@+id/textView61"
+                            app:layout_constraintStart_toEndOf="@+id/war1"
+                            app:layout_constraintTop_toBottomOf="@+id/textView61" />
+
+                        <EditText
+                            android:id="@+id/rm2"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/war2"
+                            app:layout_constraintEnd_toEndOf="@+id/remark1"
+                            app:layout_constraintStart_toEndOf="@+id/war2"
+                            app:layout_constraintTop_toBottomOf="@+id/remark1" />
+
+                        <EditText
+                            android:id="@+id/rm3"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/war3"
+                            app:layout_constraintEnd_toEndOf="@+id/rm2"
+                            app:layout_constraintStart_toEndOf="@+id/war3"
+                            app:layout_constraintTop_toBottomOf="@+id/rm2" />
+
+                        <EditText
+                            android:id="@+id/rm4"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/war4"
+                            app:layout_constraintEnd_toEndOf="@+id/rm3"
+                            app:layout_constraintStart_toEndOf="@+id/war4"
+                            app:layout_constraintTop_toBottomOf="@+id/rm3" />
+
+                        <EditText
+                            android:id="@+id/rm5"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/backgroundsquare"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/war5"
+                            app:layout_constraintEnd_toEndOf="@+id/rm4"
+                            app:layout_constraintStart_toEndOf="@+id/war5"
+                            app:layout_constraintTop_toBottomOf="@+id/rm4" />
+
+                        <TextView
+                            android:id="@+id/customersig"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Customer Signature"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/serial5"
+                            app:layout_constraintTop_toBottomOf="@+id/serial5" />
+
+                        <TextView
+                            android:id="@+id/textView63"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Date"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/customersig"
+                            app:layout_constraintTop_toBottomOf="@+id/customersig" />
+
+                        <EditText
+                            android:id="@+id/installationDate2"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:hint="Date"
+                            android:inputType="text"
+                            android:paddingLeft="3dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="#C7C7C7"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView63"
+                            app:layout_constraintEnd_toEndOf="@+id/customersig"
+                            app:layout_constraintStart_toEndOf="@+id/textView63"
+                            app:layout_constraintTop_toTopOf="@+id/textView63" />
+
+                        <TextView
+                            android:id="@+id/techniciansig"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Technician Signature"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/room5"
+                            app:layout_constraintTop_toBottomOf="@+id/war5" />
+
+                        <View
+                            android:id="@+id/divider"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="14dp"
+                            android:background="?android:attr/listDivider"
+                            android:backgroundTint="@color/black"
+                            app:layout_constraintEnd_toEndOf="@+id/rm5"
+                            app:layout_constraintStart_toStartOf="@+id/textView63"
+                            app:layout_constraintTop_toBottomOf="@+id/textView63" />
+
+                        <TextView
+                            android:id="@+id/textView65"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Important Notes: "
+                            android:textColor="@color/black"
+                            android:textSize="11sp"
+                            android:textStyle="bold|italic"
+                            app:layout_constraintStart_toStartOf="@+id/divider"
+                            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+                        <TextView
+                            android:id="@+id/textView66"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:paddingLeft="2dp"
+                            android:paddingTop="2dp"
+                            android:text="Product warranty is valid only if the product is installed by company technician. The Warranty Card details must be entered to our eterprise portal. Extended warranty must be taken at the time of product purchase. Fill the column with Warranty Pack No. to have extended warranty. Original invoice should be presented to Technician and handover the photocopy of it. Without having invoice, above entered details are invalid to system.\nDORSET accepts the maximum liability as the cost of the product. Any consequential or incidental loss or damage is expressly excluded.addmissibility of claim under the warranty.Courts of DELHI have exclusive jurisdiction over matters flowing / included in this warranty. "
+                            android:textColor="@color/black"
+                            android:textSize="9sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/divider"
+                            app:layout_constraintStart_toStartOf="@+id/textView65"
+                            app:layout_constraintTop_toBottomOf="@+id/textView65" />
+<!--                        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                            android:id="@+id/sigcus"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="0dp"-->
+<!--                            android:background="@color/white"-->
+<!--                            app:layout_constraintBottom_toTopOf="@+id/textView38"-->
+<!--                            app:layout_constraintEnd_toEndOf="@+id/editTextText8"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                            <com.github.gcacace.signaturepad.views.SignaturePad-->
+<!--                                android:id="@+id/signature_pad"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:background="@android:color/transparent"-->
+<!--                                android:backgroundTint="@android:color/transparent"-->
+<!--                                android:defaultFocusHighlightEnabled="true"-->
+<!--                                android:maxWidth="1dp"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintStart_toStartOf="parent"-->
+<!--                                app:layout_constraintTop_toTopOf="parent"-->
+<!--                                app:penColor="@android:color/black"-->
+<!--                                app:penMaxWidth="1dp" />-->
+
+<!--                            <Button-->
+<!--                                android:id="@+id/donebutton"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:backgroundTint="#2196F3"-->
+<!--                                android:text="Done"-->
+<!--                                android:textColor="@color/white"-->
+<!--                                app:layout_constraintBottom_toBottomOf="@+id/signature_pad"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintStart_toStartOf="parent" />-->
+<!--                        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/customersignimg"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="0dp"-->
+<!--                            android:layout_marginStart="5dp"-->
+<!--                            android:background="@android:color/transparent"-->
+<!--                            app:layout_constraintBottom_toTopOf="@+id/textView65"-->
+<!--                            app:layout_constraintEnd_toEndOf="@+id/editTextText24"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toBottomOf="@+id/serial3"-->
+<!--                            tools:srcCompat="@tools:sample/avatars" />-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/techsignimg"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="0dp"-->
+<!--                            android:background="@android:color/transparent"-->
+<!--                            app:layout_constraintBottom_toBottomOf="@+id/customersignimg"-->
+<!--                            app:layout_constraintEnd_toEndOf="@+id/techniciansig"-->
+<!--                            app:layout_constraintStart_toEndOf="@+id/editTextText34"-->
+<!--                            app:layout_constraintTop_toBottomOf="@+id/editTextText42"-->
+<!--                            tools:srcCompat="@tools:sample/avatars" />-->
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
